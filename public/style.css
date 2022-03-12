@@ -1,0 +1,141 @@
+body {
+  background: linear-gradient(50deg, #3388ff, #00be6f);
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+h1 {
+  color: azure;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+.card-timers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: cornsilk;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.75),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgb(0, 38, 209);
+}
+.timer-col {
+  margin-top: 2rem;
+}
+.timer-label:nth-child(2) {
+  padding: 0.3rem;
+  font-size: larger;
+  text-transform: uppercase;
+  color: rgb(0, 38, 209);
+}
+.timer-col p:first-of-type {
+  font-size: 3rem;
+  font-weight: 800;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 25, 255, 1.9);
+  background-color: aliceblue;
+  color: #00333f;
+}
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.75),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+.timer-btn button {
+  width: 100%;
+  margin-top: 0.7rem;
+}
+
+/* footer card styles */
+.card-footer .card {
+  height: 130px;
+  overflow-y: auto;
+}
+.card-footer .card::-webkit-scrollbar {
+  width: 10px;
+}
+.card-footer .card::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border-radius: 3px;
+}
+.card {
+  padding: 0.5rem;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.75),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+.card-footer p {
+  width: 50%;
+  margin: 0.3rem auto;
+  text-align: center;
+  color: rgb(0, 38, 209);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.55);
+}
+
+@media screen and (max-width: 769px) {
+  .card-timers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .card-footer p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .card-timers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .btn-group {
+    display: flex;
+    align-self: center;
+  }
+  .card-footer p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card > h1 {
+    display: none;
+    font-size: 0.5rem;
+    text-align: left;
+  }
+  .timer-label:nth-child(2) {
+    font-size: 1rem;
+    text-transform: none;
+  }
+  .timer-col p:first-of-type {
+    display: inline-block;
+    width: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .timer-btn button {
+    width: 50%;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  .card {
+    padding: 0.3rem;
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.75),
+      0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  }
+  .card-footer p {
+    width: 90%;
+    margin: 0.3rem auto;
+    padding: 1px;
+    font-size: 0.7rem;
+  }
+}
